@@ -39,10 +39,12 @@ app.use(
   express.urlencoded({ extended: true })
 )
 
-// Define routes
-// Root route
 app.get('/', (req, res) => {
   res.send('Hello World!')
+})
+
+app.get('/html', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
 })
 
 // Health check route
