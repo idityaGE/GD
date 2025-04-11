@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express Todo App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .todo-list {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .todo-item {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .todo-item:last-child {
+      border-bottom: none;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Express Todo App</h1>
+  <div class="todo-list">
+    <h2>My Todo List</h2>
+    <div class="todo-item completed">Eat</div>
+    <div class="todo-item">Sleep</div>
+    <div class="todo-item">Code</div>
+    <div class="todo-item">Repeat</div>
+  </div>
+
+  <div style="margin-top: 30px; text-align: center;">
+    <p>This is a simple HTML page served by Express.js</p>
+    <p>Check out the API at <a href="/todos">/todos</a></p>
+  </div>
+</body>
+
+</html>
